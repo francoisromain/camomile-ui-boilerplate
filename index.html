@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Camomile UI Boilerplate Simple</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-alt">
+  <div id="app">
+    <cml-app user-name="root" user-password="roO7p4s5wOrD" url="http://localhost:3000" title="Camomile UI">
+
+      <div class="container pt">
+
+        <div class="blobs">
+          <cml-admin-users class="blob-1-2 p bg-bg"></cml-admin-users>
+          <cml-admin-groups class="blob-1-2 p bg-bg"></cml-admin-groups>
+        </div>
+
+        <cml-corpus></cml-corpus>
+        <cml-medias></cml-medias>
+        <cml-layers></cml-layers>
+        <cml-annotations></cml-annotations>
+
+        <div class="blobs">
+          <cml-corpus-list class="blob-1-2 p bg-bg"></cml-corpus-list>
+          <cml-medias-list class="blob-1-2 p bg-bg"></cml-medias-list>
+          <cml-layers-list class="blob-1-2 p bg-bg"></cml-layers-list>
+          <cml-annotations-list class="blob-1-2 p bg-bg"></cml-annotations-list>
+        </div>
+
+        <div class="blobs">
+          <cml-layers-add class="blob-1-4 p bg-bg"></cml-layers-add>
+          <cml-annotations-buttons class="blob-1-2 p bg-bg"></cml-annotations-buttons>
+          <cml-annotations-edit class="blob-1-4 p bg-bg"></cml-annotations-edit>
+        </div>
+
+        <cml-annotations-timeline class="mb"></cml-annotations-timeline>
+        <cml-medias-controller class="mb"></cml-medias-controller>
+        <cml-annotations-zoning class="mb">
+          <cml-medias-video></cml-medias-video>
+        </cml-annotations-zoning>
+
+        <div class="blobs">
+          <cml-corpus uid="test-corpus"></cml-corpus>
+          <cml-medias corpus-uid="test-corpus" uid="test-media"></cml-medias>
+          <cml-layers corpus-uid="test-corpus" uid="test-layers"></cml-layers>
+          <cml-annotations media-uid="test-media" layers-uid="test-layers" uid="test-annotations"></cml-annotations>
+        </div>
+
+        <div class="blobs">
+          <cml-corpus-list class="blob-1-2 p bg-bg" uid="test-corpus"></cml-corpus-list>
+          <cml-medias-list class="blob-1-2 p bg-bg" uid="test-media"></cml-medias-list>
+          <cml-layers-list class="blob-1-2 p bg-bg" uid="test-layers"></cml-layers-list>
+          <cml-annotations-list class="blob-1-2 p bg-bg" uid="test-annotations"></cml-annotations-list>
+        </div>
+
+      </div>
+
+    </cml-app>
+  </div>
+
+  <script src="libs/vue.min.js"></script>
+  <script src="libs/vuex.min.js"></script>
+  <script src="libs/camomile-client.min.js"></script>
+  <script src="libs/camomile-ui.min.js"></script>
+
+  <script>
+    console.log(camomileUi)
+    var app = new Vue({
+      name: 'MyApp',
+      el: '#app',
+      components: {
+        cmlApp: camomileUi.App,
+        cmlAdminUsers: camomileUi.AdminUsers,
+        cmlAdminGroups: camomileUi.AdminGroups,
+        cmlCorpus: camomileUi.Corpus,
+        cmlCorpusList: camomileUi.CorpusList,
+        cmlMedias: camomileUi.Medias,
+        cmlMediasList: camomileUi.MediasList,
+        cmlMediasYoutube: camomileUi.MediasYoutube,
+        cmlMediasVideo: camomileUi.MediasVideo,
+        cmlMediasController: camomileUi.MediasController,
+        cmlLayers: camomileUi.Layers,
+        cmlLayersList: camomileUi.LayersList,
+        cmlLayersAdd: camomileUi.LayersAdd,
+        cmlAnnotations: camomileUi.Annotations,
+        cmlAnnotationsList: camomileUi.AnnotationsList,
+        cmlAnnotationsButtons: camomileUi.AnnotationsButtons,
+        cmlAnnotationsTimeline: camomileUi.AnnotationsTimeline,
+        cmlAnnotationsEdit: camomileUi.AnnotationsEdit,
+        cmlAnnotationsZoning: camomileUi.AnnotationsZoning
+      }
+    })
+  </script>
+
+</body>
+
+</html>
