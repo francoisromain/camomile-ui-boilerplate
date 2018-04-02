@@ -38,9 +38,7 @@ The project dependencies:
 
 1.  Clone this repo on your computer.
 
-2.  Open `index.html` from a local server (For example, with node [http-server](https://www.npmjs.com/package/http-server)).
-
-3.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
+2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
 
 ```txt
 .
@@ -60,5 +58,7 @@ Set env variables and start the API server:
 ```bash
 export CMML_DB=../camomile-data/mongodb/files && export CMML_LOGS=../camomile-data/camomile/logs && export CMML_MEDIA=../camomile-data/media && export CMML_UPLOAD=../camomile-data/upload && export CMML_PORT=3000 && export CMML_PASSWORD=roO7p4s5wOrD && docker-compose -f ../camomile-server/docker-compose.dev.yml up --build -d
 ```
+
+3.  From this repo, open `index.html` on a local server (For example, with node [http-server](https://www.npmjs.com/package/http-server)).
 
 4.  Start building your Camomile interface inside the `index.html` file.
