@@ -19,7 +19,7 @@ A similar (more advanced) project using npm and webpack is available here: [Camo
 +-- README.md
 ```
 
-#### /libs
+### /libs
 
 The project dependencies:
 
@@ -28,7 +28,7 @@ The project dependencies:
 * [Vuex](https://vuex.vuejs.org/)
 * [Camomile UI](https://www.npmjs.com/package/@camomile/camomile-ui)
 
-#### index.html
+### index.html
 
 **The only file that needs to be edited to build an application.**
 
