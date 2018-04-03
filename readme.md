@@ -23,7 +23,7 @@ A similar (more advanced) project using npm and webpack is available here: [Camo
 
 The project dependencies:
 
-* [camomile-client-javascript](https://github.com/camomile-project/camomile-client-javascript)
+* [Camomile Client](https://github.com/camomile-project/camomile-client-javascript)
 * [Vue.js](https://vuejs.org/)
 * [Vuex](https://vuex.vuejs.org/)
 * [Camomile UI](https://www.npmjs.com/package/@camomile/camomile-ui)
@@ -38,7 +38,7 @@ The project dependencies:
 
 1.  Clone this repo on your computer.
 
-2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
+2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server repo in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
 
 ```txt
 .
@@ -53,7 +53,7 @@ The project dependencies:
     +-- upload
 ```
 
-Set env variables and start the API server:
+Set the `env` variables and start the API server:
 
 ```bash
 export CMML_DB=../camomile-data/mongodb/files && export CMML_LOGS=../camomile-data/camomile/logs && export CMML_MEDIA=../camomile-data/media && export CMML_UPLOAD=../camomile-data/upload && export CMML_PORT=3000 && export CMML_PASSWORD=roO7p4s5wOrD && docker-compose -f ../camomile-server/docker-compose.dev.yml up --build -d
