@@ -12,51 +12,47 @@
   <div id="app">
     <cml-app user-name="root" user-password="roO7p4s5wOrD" url="http://localhost:3000" title="Camomile UI">
 
-      <div class="container pt">
+      <div class="tablet-blobs">
+        <cml-admin-users class="tablet-blob-1-2"></cml-admin-users>
+        <cml-admin-groups class="tablet-blob-1-2"></cml-admin-groups>
+      </div>
 
-        <div class="blobs">
-          <cml-admin-users class="blob-1-2 p bg-bg"></cml-admin-users>
-          <cml-admin-groups class="blob-1-2 p bg-bg"></cml-admin-groups>
-        </div>
+      <cml-corpus></cml-corpus>
+      <cml-medias></cml-medias>
+      <cml-layers></cml-layers>
+      <cml-annotations></cml-annotations>
 
-        <cml-corpus></cml-corpus>
-        <cml-medias></cml-medias>
-        <cml-layers></cml-layers>
-        <cml-annotations></cml-annotations>
+      <div class="tablet-blobs">
+        <cml-corpus-list class="tablet-blob-1-2"></cml-corpus-list>
+        <cml-medias-list class="tablet-blob-1-2"></cml-medias-list>
+        <cml-layers-list class="tablet-blob-1-2"></cml-layers-list>
+        <cml-annotations-list class="tablet-blob-1-2"></cml-annotations-list>
+      </div>
 
-        <div class="blobs">
-          <cml-corpus-list class="blob-1-2 p bg-bg"></cml-corpus-list>
-          <cml-medias-list class="blob-1-2 p bg-bg"></cml-medias-list>
-          <cml-layers-list class="blob-1-2 p bg-bg"></cml-layers-list>
-          <cml-annotations-list class="blob-1-2 p bg-bg"></cml-annotations-list>
-        </div>
+      <div class="tablet-blobs">
+        <cml-layers-add class="tablet-blob-1-4"></cml-layers-add>
+        <cml-annotations-buttons class="tablet-blob-1-2"></cml-annotations-buttons>
+        <cml-annotations-edit class="tablet-blob-1-4"></cml-annotations-edit>
+      </div>
 
-        <div class="blobs">
-          <cml-layers-add class="blob-1-4 p bg-bg"></cml-layers-add>
-          <cml-annotations-buttons class="blob-1-2 p bg-bg"></cml-annotations-buttons>
-          <cml-annotations-edit class="blob-1-4 p bg-bg"></cml-annotations-edit>
-        </div>
+      <cml-annotations-timeline></cml-annotations-timeline>
+      <cml-medias-controller></cml-medias-controller>
+      <cml-annotations-zoning>
+        <cml-medias-video></cml-medias-video>
+      </cml-annotations-zoning>
 
-        <cml-annotations-timeline class="mb"></cml-annotations-timeline>
-        <cml-medias-controller class="mb"></cml-medias-controller>
-        <cml-annotations-zoning class="mb">
-          <cml-medias-video></cml-medias-video>
-        </cml-annotations-zoning>
+      <div class="tablet-blobs">
+        <cml-corpus uid="test-corpus"></cml-corpus>
+        <cml-medias corpus-uid="test-corpus" uid="test-media"></cml-medias>
+        <cml-layers corpus-uid="test-corpus" uid="test-layers"></cml-layers>
+        <cml-annotations media-uid="test-media" layers-uid="test-layers" uid="test-annotations"></cml-annotations>
+      </div>
 
-        <div class="blobs">
-          <cml-corpus uid="test-corpus"></cml-corpus>
-          <cml-medias corpus-uid="test-corpus" uid="test-media"></cml-medias>
-          <cml-layers corpus-uid="test-corpus" uid="test-layers"></cml-layers>
-          <cml-annotations media-uid="test-media" layers-uid="test-layers" uid="test-annotations"></cml-annotations>
-        </div>
-
-        <div class="blobs">
-          <cml-corpus-list class="blob-1-2 p bg-bg" uid="test-corpus"></cml-corpus-list>
-          <cml-medias-list class="blob-1-2 p bg-bg" uid="test-media"></cml-medias-list>
-          <cml-layers-list class="blob-1-2 p bg-bg" uid="test-layers"></cml-layers-list>
-          <cml-annotations-list class="blob-1-2 p bg-bg" uid="test-annotations"></cml-annotations-list>
-        </div>
-
+      <div class="tablet-blobs">
+        <cml-corpus-list class="tablet-blob-1-2" uid="test-corpus"></cml-corpus-list>
+        <cml-medias-list class="tablet-blob-1-2" uid="test-media"></cml-medias-list>
+        <cml-layers-list class="tablet-blob-1-2" uid="test-layers"></cml-layers-list>
+        <cml-annotations-list class="tablet-blob-1-2" uid="test-annotations"></cml-annotations-list>
       </div>
 
     </cml-app>
