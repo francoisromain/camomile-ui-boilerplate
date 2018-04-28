@@ -1,8 +1,8 @@
-# Camomile UI boilerplate simple
+# Camomile UI boilerplate
 
 > A simple boilerplate for [Camomile-ui](https://github.com/francoisromain/camomile-ui).
 
-A similar (more advanced) project using npm and webpack is available here: [Camomile UI boilerplate](https://github.com/francoisromain/camomile-ui-boilerplate).
+A similar (more advanced) project using npm and webpack is available here: [Camomile UI boilerplate (with webpack)](https://github.com/francoisromain/camomile-ui-boilerplate-webpack).
 
 ---
 
